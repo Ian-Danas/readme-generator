@@ -1,36 +1,44 @@
 // Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if(license != ''){
-   return `![License Badge](https://img.shields.io/badge/${license}-License-green)`
+  console.log("license from badge", license);
+  if (license.length != 0) {
+    return `![License Badge](https://img.shields.io/badge/${license}-License-green)`;
   }
-  return ''
+  return "";
 }
 
-// TODO: Create a function that returns the license link
+// Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license.length != 0) {
+    return `[License](#License)${"\n"}`;
+  }
+  return "";
+}
 
 //Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if(license != ''){
-    return `This project is covered under the ${license} license`
+  if (license.length === 0) {
+    console.log('In this if statement')
+    return "";
   }
-  return ''
-}
+  return `## License ${'<a id = "License"></a>'}
+  This project is covered under the ${license} license`
+  }
 
 //Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title} ${renderLicenseBadge(data.license)}
 ## Table of Contents
-1.[Description](#Description)${'\n'}
-2.[Installation](#Installation)${'\n'}
-3.[Usage](#Usage)${'\n'}
-4.[Contributing](#Contributing)${'\n'}
-5.[Tests](#Tests)${'\n'}
-6.[License](#License)${'\n'}
-7.[Questions](#Questions)${'\n'}
+[Description](#Description)${"\n"}
+[Installation](#Installation)${"\n"}
+[Usage](#Usage)${"\n"}
+[Contributing](#Contributing)${"\n"}
+[Tests](#Tests)${"\n"}
+${renderLicenseLink(data.license)}
+[Questions](#Questions)${"\n"}
 
 ## Description ${'<a id = "Description"></a>'}
 ${data.desc}
@@ -42,12 +50,11 @@ ${data.usage}
 ${data.contribute}
 ## Tests ${'<a id = "Tests"></a>'}
 ${data.tests}
-## License ${'<a id = "License"></a>'}
 ${renderLicenseSection(data.license)}
 ## Questions ${'<a id = "Questions"></a>'}
 if you have an additional questions about the project reach out to me at the github username or the email below
-${'\n'} github: ${data.username}
-${'\n'} Email: ${data.email}
+${"\n"} github: ${data.username}
+${"\n"} Email: ${data.email}
 
 
 `;

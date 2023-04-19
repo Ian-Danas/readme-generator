@@ -1,18 +1,17 @@
 # a 
 ## Table of Contents
-1.[Description](#Description)
+[Description](#Description)
 
-2.[Installation](#Installation)
+[Installation](#Installation)
 
-3.[Usage](#Usage)
+[Usage](#Usage)
 
-4.[Contributing](#Contributing)
+[Contributing](#Contributing)
 
-5.[Tests](#Tests)
+[Tests](#Tests)
 
-6.[License](#License)
 
-7.[Questions](#Questions)
+[Questions](#Questions)
 
 
 ## Description <a id = "Description"></a>
@@ -25,7 +24,6 @@ a
 a
 ## Tests <a id = "Tests"></a>
 a
-## License <a id = "License"></a>
 
 ## Questions <a id = "Questions"></a>
 if you have an additional questions about the project reach out to me at the github username or the email below
