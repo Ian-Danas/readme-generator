@@ -1,4 +1,4 @@
-# a
+# a 
 ## Table of Contents
 1.[Description](#Description)
 
@@ -26,7 +26,7 @@ a
 ## Tests <a id = "Tests"></a>
 a
 ## License <a id = "License"></a>
-This project is covered under the MIT License license
+
 ## Questions <a id = "Questions"></a>
 if you have an additional questions about the project reach out to me at the github username or the email below
 
