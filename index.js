@@ -65,7 +65,7 @@ function init() {
     inquirer.prompt(questions)
       .then(function (answer) {
         markdown = generateMarkdown(answer)
-        writeToFile('testing',markdown)
+        writeToFile('./output/testing',markdown)
        });
     
   

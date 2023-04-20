@@ -1,11 +1,10 @@
 // Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  console.log("license from badge", license);
   if (license.length != 0) {
-    return `![License Badge](https://img.shields.io/badge/${license}-License-green)`;
+    return `![License Badge](https://img.shields.io/badge/License-${license}-green)`;
   }
-  return "";
+  return ``;
 }
 
 // Create a function that returns the license link
@@ -14,23 +13,23 @@ function renderLicenseLink(license) {
   if (license.length != 0) {
     return `[License](#License)${"\n"}`;
   }
-  return "";
+  return ``;
 }
 
 //Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license.length === 0) {
-    console.log('In this if statement')
-    return "";
+  if (license.length != 0) {
+    return `## License ${'<a id = "License"></a>'}
+    This project is covered under the ${license} license`
   }
-  return `## License ${'<a id = "License"></a>'}
-  This project is covered under the ${license} license`
+  return ``;
   }
 
 //Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title} ${renderLicenseBadge(data.license)}
+  return `# ${data.title} 
+${renderLicenseBadge(data.license)}
 ## Table of Contents
 [Description](#Description)${"\n"}
 [Installation](#Installation)${"\n"}
