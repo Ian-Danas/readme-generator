@@ -21,7 +21,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license.length != 0) {
     return `## License ${'<a id = "License"></a>'}
-    This project is covered under the ${license} license`
+  This project is covered under the ${license} license`
   }
   return ``;
   }
@@ -52,7 +52,7 @@ ${data.tests}
 ${renderLicenseSection(data.license)}
 ## Questions ${'<a id = "Questions"></a>'}
 if you have an additional questions about the project reach out to me at the github username or the email below
-${"\n"} github: ${data.username}
+${"\n"} github: https://github.com/${data.username}
 ${"\n"} Email: ${data.email}
 
 
