@@ -1,4 +1,4 @@
-# Test project 
+# Sample Readme 
 ![License Badge](https://img.shields.io/badge/License-MIT-green)
 ## Table of Contents
 [Description](#Description)
@@ -17,22 +17,22 @@
 
 
 ## Description <a id = "Description"></a>
-this is an example of a description
+This is where you put your project description
 ## Installation <a id = "Installation"></a>
-this is where you would put your install information
+This is where you put the info on how to install project
 ## Usage <a id = "Usage"></a>
-this is where you would put your usage info
+This is where you explain how to use your project
 ## Contributing <a id = "Contributing"></a>
-this is where all the contributor info goes
+This is where you add all contributors on the project
 ## Tests <a id = "Tests"></a>
-place to put if you have an tests
+This is where all the tests go 
 ## License <a id = "License"></a>
   This project is covered under the MIT license
 ## Questions <a id = "Questions"></a>
 if you have an additional questions about the project reach out to me at the github username or the email below
 
- github: https://github.com/Ian
+ github: https://github.com/Ian-Danas
 
- Email: Ian@testemail.com
+ Email: ian@email.com
 
 
